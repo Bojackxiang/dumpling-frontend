@@ -10,8 +10,7 @@ import Shop from "components/Shop/Shop";
 import Collections from "components/Shop/Collections";
 import ItemDetail from "components/Shop/ItemDetail";
 import Login from "components/Login/Login";
-import Banner from "components/Header/Banner";
-import Nav from "components/Header/Nav";
+
 
 
 const App = () => {
