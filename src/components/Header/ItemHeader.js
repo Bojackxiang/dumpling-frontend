@@ -1,5 +1,5 @@
-import Banner from './Banner'
-import ItemNav from './ItemNav'
+import Banner from "./Banner";
+import ItemNav from "./ItemNav";
 
 function Header() {
     return (
@@ -7,7 +7,7 @@ function Header() {
             <Banner />
             <ItemNav />
         </div>
-    )
+    );
 }
 
-export default Header
+export default Header;
