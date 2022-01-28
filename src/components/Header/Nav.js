@@ -11,10 +11,7 @@ const MENU_CLASS =
 const CART_ICON_CLASS =
     "flex transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal border-red-500 hover:border-b-2";
 
-const Nav = (props) => {
-    let { textColor } = props;
-    if(!textColor) textColor = 'text-white'
-    
+const Nav = () => {
     const dispatch = useDispatch();
     
     return (
@@ -25,16 +22,16 @@ const Nav = (props) => {
                 "py-4",
                 "w-full",
                 "m-auto",
-                'absolute',
-                {[textColor]: Boolean(textColor)}
+                'relative',
+                'bg-zinc-800',
+                'text-white',
             )}
-            style={{backgroundColor: 'transparent'}}
         >
             <Link to="/">
                 <h1 className={TITLE_CLASS}>bloom</h1>
             </Link>
 
-            <ul className="flex justify-end items-end pr-4 md:pr-24 w-full space-x-6 md:space-x-12 font-display font-thin md:font-light">
+            <ul className="flex justify-end items-end items-center pr-4 md:pr-24 w-full space-x-6 md:space-x-12 font-display font-thin md:font-light">
                 <Link to="/about">
                     <li className={MENU_CLASS}>About</li>
                 </Link>

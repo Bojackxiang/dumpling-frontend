@@ -13,7 +13,7 @@ const Login = () => {
     <div className="h-screen">
       <div>
         <Banner />
-        <Nav textColor="text-black" />
+        <Nav/>
       </div>
 
       <div className=" text-gray-700 bg-white min-h-0 h-auto">
