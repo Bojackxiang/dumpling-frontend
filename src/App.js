@@ -9,6 +9,7 @@ import About from "components/About/About";
 import Shop from "components/Shop/Shop";
 import Collections from "components/Shop/Collections";
 import ItemDetail from "components/Shop/ItemDetail";
+import Login from "components/Login/Login";
 
 const App = () => {
     return (
@@ -29,6 +30,11 @@ const App = () => {
                         exact
                         path="/shop/collection/:name"
                         component={ItemDetail}
+                    />
+                    <Route
+                        exact
+                        path="/login"
+                        component={Login}
                     />
                 </Switch>
             </Router>

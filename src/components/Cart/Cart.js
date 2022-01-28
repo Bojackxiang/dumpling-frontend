@@ -1,7 +1,8 @@
 import React from "react";
-import CartDisplay from "./CartDisplay";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+
+import CartDisplay from "./CartDisplay";
 import { hideCart } from "../../reducers/cartSlice";
 
 const Cart = () => {

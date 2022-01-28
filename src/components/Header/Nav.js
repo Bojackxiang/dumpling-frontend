@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { displayCart } from "../../reducers/cartSlice";
+import clsx from "clsx";
 
 const TITLE_CLASS =
     "transform duration-300 hover:-translate-y-1 font-display font-thin tracking-wide m-auto pl-4 md:pl-12 text-2xl md:text-5xl";
@@ -9,11 +10,25 @@ const MENU_CLASS =
     "text-sm md:text-lg transition duration-300 transform hover:-translate-y-1 hover:text-red-500 border-red-500 hover:border-b-2";
 const CART_ICON_CLASS =
     "flex transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal border-red-500 hover:border-b-2";
-const Nav = () => {
-    const dispatch = useDispatch();
 
+const Nav = (props) => {
+    let { textColor } = props;
+    if(!textColor) textColor = 'text-white'
+    
+    const dispatch = useDispatch();
+    
     return (
-        <nav className="flex h-18 py-4 w-full m-auto text-white">
+        // <nav className={`flex h-18 py-4 w-full m-auto text-white ${textColor}`}>
+        <nav
+            className={clsx(
+                "flex",
+                "h-18",
+                "py-4",
+                "w-full",
+                "m-auto",
+                {[textColor]: Boolean(textColor)}
+            )}
+        >
             <Link to="/">
                 <h1 className={TITLE_CLASS}>bloom</h1>
             </Link>
@@ -25,7 +40,7 @@ const Nav = () => {
                 <Link to="/shop">
                     <li className={MENU_CLASS}>Shop</li>
                 </Link>
-                <Link to="/auth">
+                <Link to="/login">
                     <li className={MENU_CLASS}>Login</li>
                 </Link>
 
