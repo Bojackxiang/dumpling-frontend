@@ -15,10 +15,10 @@ const About = () => {
         <div className="h-screen">
             <div>
                 <Banner />
-                <Nav textColor="text-black" />
+                <Nav />
             </div>
 
-            {/* <AboutHero /> */}
+            <AboutHero />
             <div className=" text-gray-700 bg-white min-h-0 h-auto">
                 <div className="w-9/12 text-center m-auto">
                     <h1 className="font-display text-2xl md:text-4xl m-12">

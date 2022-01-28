@@ -18,7 +18,6 @@ const Nav = (props) => {
     const dispatch = useDispatch();
     
     return (
-        // <nav className={`flex h-18 py-4 w-full m-auto text-white ${textColor}`}>
         <nav
             className={clsx(
                 "flex",
@@ -26,8 +25,10 @@ const Nav = (props) => {
                 "py-4",
                 "w-full",
                 "m-auto",
+                'absolute',
                 {[textColor]: Boolean(textColor)}
             )}
+            style={{backgroundColor: 'transparent'}}
         >
             <Link to="/">
                 <h1 className={TITLE_CLASS}>bloom</h1>

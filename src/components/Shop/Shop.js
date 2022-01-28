@@ -5,6 +5,8 @@ import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 import ShopHero from "components/Shop/ShopHero";
 import ShopNav from "components/Shop/ShopNav";
+import Banner from "components/Header/Banner";
+import Nav from "components/Header/Nav";
 
 function Shop() {
     const products = useSelector((state) => state.cart.products);
@@ -23,8 +25,11 @@ function Shop() {
     ));
 
     return (
-        <div className="h-screen relative">
-            <Header />
+        <div className="h-screen ">
+            <div>
+                <Banner />
+                <Nav />
+            </div>
             <ShopHero />
             <ShopNav />
             <div className="grid grid-cols-2 md:grid-cols-3 mx-8 mb-14 gap-x-8 gap-y-12">
