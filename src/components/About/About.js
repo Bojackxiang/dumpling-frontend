@@ -7,12 +7,18 @@ import aboutImg from "assets/aboutImg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Banner from "components/Header/Banner";
+import Nav from "components/Header/Nav";
 
 const About = () => {
     return (
         <div className="h-screen">
-            <Header />
-            <AboutHero />
+            <div>
+                <Banner />
+                <Nav textColor="text-black" />
+            </div>
+
+            {/* <AboutHero /> */}
             <div className=" text-gray-700 bg-white min-h-0 h-auto">
                 <div className="w-9/12 text-center m-auto">
                     <h1 className="font-display text-2xl md:text-4xl m-12">
