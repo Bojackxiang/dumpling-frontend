@@ -18,7 +18,8 @@
     "react-hook-form": "^7.25.3",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.4"
   },
   "scripts": {
     "start": "react-scripts start",
