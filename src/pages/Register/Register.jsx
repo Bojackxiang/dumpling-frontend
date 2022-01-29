@@ -19,7 +19,7 @@ const Register = () => {
   };
 
   // left component
-  const LeftComponent = () => {
+  const RightComponent = () => {
     return (
       <div className=" h-full ml-auto w-1/2">
         <div className="h-full flex items-center justify-center bg-zinc-200/[.5] ">
@@ -106,7 +106,7 @@ const Register = () => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${about})`,
         }}
       >
-        <LeftComponent />
+        <RightComponent />
       </div>
       <Footer />
     </div>
