@@ -41,6 +41,10 @@ const Nav = () => {
                 <Link to="/login">
                     <li className={MENU_CLASS}>Login</li>
                 </Link>
+                <Link to="/register">
+                    <li className={MENU_CLASS}>Register</li>
+                </Link>
+
 
                 <li
                     onClick={() => dispatch(displayCart())}

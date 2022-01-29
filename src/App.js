@@ -1,7 +1,8 @@
 import "index.css";
-import ScrollToTop from "./scrollToTop";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Provider } from "react-redux";
+
+import ScrollToTop from "./scrollToTop";
 import store from "./store";
 import Home from "components/Home/Home";
 import Cart from "components/Cart/Cart";
@@ -9,9 +10,12 @@ import About from "components/About/About";
 import Shop from "components/Shop/Shop";
 import Collections from "components/Shop/Collections";
 import ItemDetail from "components/Shop/ItemDetail";
-import Login from "components/Login/Login";
+import Login from "pages/Login/Login";
+import Register from "pages/Register/Register";
 
 const App = () => {
+    
+
     return (
         <Provider store={store}>
             <Router>
@@ -32,6 +36,7 @@ const App = () => {
                         component={ItemDetail}
                     />
                     <Route exact path="/login" component={Login} />
+                    <Route exact path="/register" component={Register} />
                 </Switch>
             </Router>
         </Provider>
