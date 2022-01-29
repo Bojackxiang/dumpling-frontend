@@ -13,7 +13,7 @@ const CART_ICON_CLASS =
 
 const Nav = () => {
     const dispatch = useDispatch();
-    
+
     return (
         <nav
             className={clsx(
@@ -22,9 +22,9 @@ const Nav = () => {
                 "py-4",
                 "w-full",
                 "m-auto",
-                'relative',
-                'bg-zinc-800',
-                'text-white',
+                "relative",
+                "bg-zinc-800",
+                "text-white"
             )}
         >
             <Link to="/">

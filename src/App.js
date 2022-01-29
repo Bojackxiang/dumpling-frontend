@@ -11,8 +11,6 @@ import Collections from "components/Shop/Collections";
 import ItemDetail from "components/Shop/ItemDetail";
 import Login from "components/Login/Login";
 
-
-
 const App = () => {
     return (
         <Provider store={store}>
@@ -33,11 +31,7 @@ const App = () => {
                         path="/shop/collection/:name"
                         component={ItemDetail}
                     />
-                    <Route
-                        exact
-                        path="/login"
-                        component={Login}
-                    />
+                    <Route exact path="/login" component={Login} />
                 </Switch>
             </Router>
         </Provider>

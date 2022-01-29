@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className="absolute w-full">
             <Banner />
-            <Nav/>
+            <Nav />
         </div>
     );
 }
