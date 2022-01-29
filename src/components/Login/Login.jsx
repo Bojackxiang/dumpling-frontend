@@ -10,11 +10,11 @@ const Login = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log("submit");
+    console.log(data);
+    console.log("submit clicked");
   };
   console.log(errors);
   return (
