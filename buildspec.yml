@@ -21,4 +21,4 @@ artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: build
+  base-directory: build #build完成之后的文件名
