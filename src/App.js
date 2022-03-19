@@ -1,14 +1,19 @@
 import logo from "./logo.svg";
-
 import "./App.css";
 import { Navbar } from "components/Navbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home } from "pages/Home";
+import { About } from "pages/About";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+      </Switch>
+    </Router>
   );
 }
 
