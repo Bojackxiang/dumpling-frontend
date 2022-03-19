@@ -10,7 +10,7 @@ const Navbar = () => {
         </h1>
       </Link>
 
-      <ul className="flex justify-end items-center pr-4 md:pr-24 w-full space-x-6 md:space-x-12 font-display font-thin md:font-light">
+      <ul className="flex justify-end items-center pr-4 md:pr-24 w-full space-x-6 md:space-x-12">
         <Link to="/">
           <li className="text-sm md:text-lg transition duration-300 transform hover:-translate-y-1 hover:text-red-500 border-red-500 hover:border-b-2">
             About
