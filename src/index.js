@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { ApolloServer } from "./apollo";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloServer>
+      <App />
+    </ApolloServer>
   </React.StrictMode>,
   document.getElementById("root")
 );
